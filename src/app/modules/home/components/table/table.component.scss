@@ -1,0 +1,44 @@
+.container {
+  margin-top: 50px;
+  min-width: 400px;
+  max-width: 700px;
+  width: 100vw;
+  height: 200px;
+  overflow: auto;
+  table {
+    width: 100%;
+
+    thead {
+      background-color: rgba(0, 0, 0, 0.13);
+      th {
+        text-align: left;
+        padding: 3px;
+      }
+    }
+    tr {
+      td {
+        padding: 10px;
+
+        &.imgs {
+          display: flex;
+          justify-content: space-evenly;
+          img {
+            cursor: pointer;
+          }
+        }
+
+        &.Luxo{
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(184, 16, 170);
+        }
+        &.Carga{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(146, 146, 14);
+        }
+        &.Popular{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+      }
+    }
+  }
+}

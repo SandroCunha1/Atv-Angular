@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  min-width: 400px;
+  .text-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    input{
+        border: 0;
+        outline: none;
+        border-bottom:1px solid black ;
+        padding: 2px;
+    }
+  }
+
+  .radio-container{
+    margin: 10px 0px;
+    .radio{
+        margin-right: 10px;
+    }
+  }
+
+  .btn{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .buttons{
+    display: flex;
+    gap: 10px;
+  }
+  .erro{
+    color: red;
+    font-size: small;
+  }
+}

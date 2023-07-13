@@ -1,0 +1,24 @@
+
+<section class="container">
+
+<table>
+    <thead>
+        <th>Marca</th>
+        <th>Placa</th>
+        <th>Ano</th>
+        <th>Tipo</th>
+        <th>Ações</th>
+    </thead>
+    <tr *ngFor="let carro of listaCarros;let i = index ">
+        <td>{{carro.marca}}</td>
+        <td>{{carro.placa}}</td>
+        <td>{{carro.ano}}</td>
+        <td [ngClass]="carro.tipo">{{carro.tipo}}</td>
+        <td class="imgs">
+            <img src="../../../../../assets/icones/editar.png" alt="" width="20px" (click)="editItem(carro, i)">
+            <img src="../../../../../assets/icones/excluir.png" alt="" width="20px" (click)="deleteItem(i)">
+        </td>
+    </tr>
+</table>
+
+</section>
