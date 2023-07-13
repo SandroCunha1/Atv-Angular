@@ -7,7 +7,7 @@
   overflow: auto;
   table {
     width: 100%;
-
+    border: 1px solid rgba(37, 36, 36, 0.349);
     thead {
       background-color: rgba(0, 0, 0, 0.13);
       th {
@@ -18,10 +18,10 @@
     tr {
       td {
         padding: 10px;
-
+        border-bottom: 1px solid rgba(37, 36, 36, 0.349);
         &.imgs {
           display: flex;
-          justify-content: space-evenly;
+          gap: 5px;
           img {
             cursor: pointer;
           }

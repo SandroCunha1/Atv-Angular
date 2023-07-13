@@ -59,10 +59,16 @@ export class FormComponent implements OnInit {
   }
 
   public editCarro(carro:Carro, form:any){
+    if(carro.ano >= 1990 && carro.ano <= this.lastYear){
+
+      this.erro = false;
     this.service.deleteCarro(this.index)
     this.save(carro, form)
     this.edit = false;
     this.service.setEndEdit(false);
+    }else{
+      this.erro = true;
+    }
   }
 
   public cancelEdit(form:any){
