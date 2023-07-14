@@ -35,6 +35,7 @@ export class FormServiceService {
 
   public deleteCarro(index:number){
     this.listaCarros.splice(index, 1);
+    localStorage.setItem('carros', JSON.stringify(this.listaCarros));
   }
 
   public setEndEdit(end:boolean){
